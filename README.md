@@ -3,3 +3,4 @@
 
 - ch04:GC算法&STW测试
 - ch05:GC参数与搜集器
+- ch06:ClassLoader
