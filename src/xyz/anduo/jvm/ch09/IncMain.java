@@ -19,6 +19,7 @@ public class IncMain {
         int maxValue = 1000000;
         int[] threadNums = new int[]{1,3,10,30,300,1000};
         for (int i = 0; i < threadNums.length; i++) {
+            test(threadNums[i],maxValue,new MyIntSynchronized(0));
             test(threadNums[i],maxValue,new MyIntWithLock(0));
             test(threadNums[i],maxValue,new MyIntNoLock(new AtomicInteger(0)));
         }
@@ -30,8 +31,10 @@ public class IncMain {
         String hasLock;
         if (myInt instanceof MyIntNoLock) {
             hasLock = "无";
-        } else {
-            hasLock = "有";
+        } else if (myInt instanceof MyIntSynchronized){
+            hasLock = "有Synchronized";
+        }else {
+            hasLock = "有ReentrantLock";
         }
 
         ExecutorService exec = Executors.newFixedThreadPool(threadNum);
@@ -45,7 +48,7 @@ public class IncMain {
 
         long endTime = System.currentTimeMillis();
 
-        System.out.printf("线程数为%-4d的情况下【%s锁】的执行时间是:%5d \n", threadNum, hasLock, endTime - startTime);
+        System.out.printf("线程数为%-4d的情况下【%-14s锁】的执行时间是:%5d ms \n", threadNum, hasLock, endTime - startTime);
     }
 
 }
