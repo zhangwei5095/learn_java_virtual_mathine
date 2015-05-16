@@ -1,10 +1,8 @@
-// Copyright (C) 2015 meituan
-// All rights reserved
 package xyz.anduo.jvm.ch08;
 
 /**
  * Summary: 线程栈空间溢出
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/5/10
  * time   : 12:33
