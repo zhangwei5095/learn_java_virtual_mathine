@@ -1,11 +1,11 @@
-// Copyright (C) 2015 meituan
+// Copyright (C) 2015 anduo
 // All rights reserved
 package xyz.anduo.jvm.ch09;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Summary: TODO 描述信息
+ * Summary: 无锁的int包装
  * Author : anduo@meituan.com
  * Version: 1.0
  * Date   : 15/5/16

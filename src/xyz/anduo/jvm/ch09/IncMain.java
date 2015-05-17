@@ -23,8 +23,6 @@ public class IncMain {
             test(threadNums[i],maxValue,new MyIntWithLock(0));
             test(threadNums[i],maxValue,new MyIntNoLock(new AtomicInteger(0)));
         }
-
-
     }
 
     private static void test(int threadNum, int maxValue, MyInt myInt) {
