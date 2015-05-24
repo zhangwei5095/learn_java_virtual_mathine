@@ -13,7 +13,7 @@ import java.util.Objects;
  * volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，
  * 如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，
  * 可以使用synchronized来代替volatile。
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/4/16
  * time   : 下午12:02

@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Summary: 无锁的int包装
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/5/16
  * time   : 23:35

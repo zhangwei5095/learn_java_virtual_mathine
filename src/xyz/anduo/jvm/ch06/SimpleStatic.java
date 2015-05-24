@@ -2,7 +2,7 @@ package xyz.anduo.jvm.ch06;
 
 /**
  * //TODO 描述信息
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/4/19
  * time   : 下午3:18

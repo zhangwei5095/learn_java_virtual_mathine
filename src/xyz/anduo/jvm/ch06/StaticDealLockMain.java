@@ -7,7 +7,7 @@ package xyz.anduo.jvm.ch06;
  * <p/>
  * 因为函数<clinit>是带锁线程安全的，因此，在多线程环境下进行类初始化的时候，可能会引起死锁，
  * 并且这种死锁是很难发现的，因为看起来他们并没有可用的锁信息。
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/4/19
  * time   : 下午3:27

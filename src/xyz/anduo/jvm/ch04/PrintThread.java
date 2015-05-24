@@ -2,7 +2,7 @@ package xyz.anduo.jvm.ch04;
 
 /**
  * 打印时间线程
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/4/6
  * time   : 下午12:52

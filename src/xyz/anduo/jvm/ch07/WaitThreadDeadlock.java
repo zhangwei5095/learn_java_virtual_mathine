@@ -4,7 +4,7 @@ package xyz.anduo.jvm.ch07;
 
 /**
  * Summary: 4个线程，相互死锁(A等待B，B等待C，C等待D，D等待A)，用户分析堆栈
- * Author : anduo@meituan.com
+ * Author : anduo@qq.com
  * Version: 1.0
  * Date   : 15/4/26
  * time   : 17:57
