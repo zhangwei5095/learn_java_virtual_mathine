@@ -5,10 +5,17 @@
  */
 package xyz.anduo.jvm.ch11;
 
-import jdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
+import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
+import static org.objectweb.asm.Opcodes.ACC_STATIC;
+import static org.objectweb.asm.Opcodes.ALOAD;
+import static org.objectweb.asm.Opcodes.GETSTATIC;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
+import static org.objectweb.asm.Opcodes.INVOKEVIRTUAL;
+import static org.objectweb.asm.Opcodes.RETURN;
+import static org.objectweb.asm.Opcodes.V1_7;
+
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
-import static org.objectweb.asm.Opcodes.*;
 
 /**
  *
@@ -40,7 +47,7 @@ public class AsmTest extends ClassLoader{
         
         byte[] code = cw.toByteArray();
         AsmTest loader = new AsmTest();
-        Class exampleClass = loader.defineClass("Example",code,0,code.length);
+        Class<?> exampleClass = loader.defineClass("Example",code,0,code.length);
         exampleClass.getMethods()[0].invoke(null, new Object[]{null});
         
     }
